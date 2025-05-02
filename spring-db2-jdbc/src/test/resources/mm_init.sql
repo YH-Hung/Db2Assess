@@ -1,0 +1,6 @@
+-- DB2 SQL DDL for the "girls" table
+CREATE TABLE girls (
+    girl_id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
+    girl_name VARCHAR(255) NOT NULL,
+    PRIMARY KEY (girl_id)
+);
