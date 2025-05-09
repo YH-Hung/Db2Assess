@@ -1,0 +1,21 @@
+[project]
+name = "datamigration"
+version = "0.1.0"
+description = "A tool for migrating data between different database systems"
+requires-python = ">=3.12"
+dependencies = [
+    "pytest>=8.3.5",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+
+[tool.coverage.run]
+source = ["datamigration"]
